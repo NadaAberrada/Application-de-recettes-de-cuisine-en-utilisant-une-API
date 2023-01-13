@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+
+    <script defer src="scriptPage1.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <img
+            src="img/logo.png"
+            alt=""
+            srcset=""
+            style="width: 40px; margin-bottom: 10px; margin-right: 50px" />
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="page1.html"
+                >page d'accueil</a
+              >
+              <a class="nav-link active" aria-current="page" href="page2.html"
+                >filtrer les recettes</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container text-light">
+      <p class="h1 text-center mt-5">rechercher des recettes</p>
+      <br />
+      <div class="row justify-content-center text-light">
+        <div class="col-lg-7 mt-5">
+          <form class="card card-sm bg-transparent border-0">
+            <div class="card-body row no-gutters align-items-center">
+              <div class="col-auto">
+                <i class="fas fa-search h4 text-body"></i>
+              </div>
+              <!--end of col-->
+              <div class="col">
+                <input
+                  class="form-control form-control-lg form-control-borderless"
+                  type="search"
+                  placeholder="Search topics or keywords"
+                  id="inputsearch" />
+              </div>
+              <!--end of col-->
+              <div class="col-auto">
+                <button
+                  class="btn btn-lg text-light"
+                  id="btnsearch"
+                  type="submit"
+                  style="background-color: rgb(234, 146, 51)">
+                  Search
+                </button>
+              </div>
+              <!--end of col-->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="test">
+      <div class="row justify-content-center mt-4" id="cardsaffiche"></div>
+    </div>
+  </body>
+</html>

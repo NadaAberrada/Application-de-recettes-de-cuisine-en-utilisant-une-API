@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+:root {
+  --tenne-tawny: #d65108;
+  --tenne-tawny-dark: #b54507;
+}
+body {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  background-image: url(img/image-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  height: 100vh;
+  max-height: 900px;
+}
+h6 {
+  height: 54px;
+}
+
+.nav-link:hover {
+  /* width: 30px; */
+  border-bottom: 2px solid orange;
+}
+.mt-5 {
+  padding-top: 4%;
+  /* margin-top: 50%; */
+}
+
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  outline: 0;
+  font-size: 1.05rem;
+}
+.btn-lg:hover {
+  background-color: rgb(8, 8, 74);
+}
+.text {
+  opacity: 0.8;
+}
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#title {
+  margin-bottom: 7%;
+}
+#selectDiv {
+  margin-bottom: 7%;
+}
+/* 576 991*/
+@media only screen and (max-width: 991px) and (min-width: 576px) {
+  #btnselect {
+    font-size: 9px;
+  }
+}
+#exampleModal{
+  margin-top: 5%;
+  padding: 20px;
+}
